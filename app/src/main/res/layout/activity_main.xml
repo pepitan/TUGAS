@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="id.sch.smktelkom_mlg.tugas01.xirpl2021.tugas.MainActivity"
+    android:weightSum="1"
+    android:orientation="vertical">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="140dp"
+        android:id="@+id/scrollView"
+        android:layout_weight="0.92">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Pendaftaran Siswa"
+            android:id="@+id/textView2"
+            android:textColor="#d54c4c" />
+
+        <TextView
+            android:layout_width="252dp"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="SMK Telkom Malang"
+            android:id="@+id/textView"
+            android:layout_below="@+id/textView2"
+            android:layout_alignParentStart="true"
+            android:textColor="#ff0000" />
+
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="80dp"
+            android:id="@+id/imageView"
+            android:layout_gravity="center_horizontal"
+            android:src="@drawable/logo" />
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <EditText
+                android:hint="Nama"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/editTextNama" />
+        </android.support.design.widget.TextInputLayout>
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <EditText
+                android:hint="Tahun Kelahiran"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/editTextTahun"
+                android:inputType="numberSigned"/>
+        </android.support.design.widget.TextInputLayout>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Jenis Kelamin"
+            android:id="@+id/textView4" />
+
+        <RadioGroup
+            android:layout_width="157dp"
+            android:layout_height="53dp"
+            android:id="@+id/radioGroup1">
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Laki-laki"
+                android:id="@+id/radioButton2"
+                android:checked="false" />
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Perempuan"
+                android:id="@+id/radioButton"
+                android:checked="false" />
+
+        </RadioGroup>
+
+           <TextView
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:text="Jurusan Yang diinginkan"
+               android:id="@+id/textView6" />
+           <Spinner
+               android:layout_width="309dp"
+               android:layout_height="48dp"
+               android:entries="@array/jurusan"
+               android:id="@+id/spinner" />
+
+           <TextView
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:text="Hal yang diinginkan setelah lulus"
+               android:id="@+id/textViewL" />
+
+           <CheckBox
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:text="Bekerja"
+               android:id="@+id/checkBox"
+               android:checked="false" />
+
+           <CheckBox
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:text="Kuliah"
+               android:id="@+id/checkBox2"
+               android:checked="false" />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="DAFTAR"
+                android:id="@+id/buttonOK"
+                android:layout_gravity="center_horizontal" />
+
+            <TextView
+                android:layout_width="332dp"
+                android:layout_height="251dp"
+                android:text="Hasil"
+                android:id="@+id/textViewHasil" />
+
+        </LinearLayout>
+    </ScrollView>
+
+
+</LinearLayout>
